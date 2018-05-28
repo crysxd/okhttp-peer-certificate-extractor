@@ -1,3 +1,7 @@
+
+![Jitpack](https://jitpack.io/v/crysxd/okhttp-peer-certificate-extractor.svg)
+
+
 # Peer certificate extractor
 
 This tool extracts peer certificates from given certificates.
@@ -30,6 +34,28 @@ Enabling okhttp certificate pinning is now made the following way:
                     .build())
                 .build();
 ~~~
+
+## Get it
+
+_Step 1:_ Add it in your root build.gradle at the end of repositories:
+
+~~~
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
+~~~
+
+_Step 2:_ Add the dependency
+
+~~~
+dependencies {
+    implementation 'com.github.crysxd:okhttp-peer-certificate-extractor:1.0.0'
+}
+~~~
+
 
 
 License
